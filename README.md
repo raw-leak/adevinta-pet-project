@@ -7,10 +7,4 @@ This application allows the user to see current trends, search by name and see t
 
 ## [Documentation](docs/README.md)
 
-## [Domain](frontend-mv--domain/README.md)
 
-## [React](frontend-mv--uilib-components-master/README.md) <-
-
-## [Theme](frontend-mv--uilib-theme-master/README.md)
-
-## [WebApp](frontend-mv--web-app-master/README.md)

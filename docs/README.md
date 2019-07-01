@@ -21,7 +21,7 @@ TODO
 #### Tablet
 ![Search List](img/searchList-tablet.jpg)
 #### Desktop
-![Search List](img/searchList.jpg)
+![Search List](img/searchList-desktop.jpg)
 
 ### Trendy List
 #### Mobile
