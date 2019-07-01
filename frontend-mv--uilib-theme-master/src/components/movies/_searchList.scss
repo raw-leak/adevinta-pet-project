@@ -1,0 +1,83 @@
+// @import '~@s-ui/react-molecule-pagination/lib/index';
+@import '../../../../frontend-mv--uilib-components-master/components/movies/searchList/node_modules/@s-ui/react-molecule-pagination/lib/index.scss';
+@import '../../../../frontend-mv--uilib-components-master/components/movies/searchList/node_modules/@s-ui/react-atom-spinner/lib/index.scss';
+
+.mv-MoviesSearchList {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    &__header {
+        color: white;
+    }
+
+    &__items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-grow: 1;
+    }
+
+    &__item {
+        & .sui-AtomCard {
+            margin: 0 5px;
+
+            &-media {
+
+                max-width: 27vw;
+
+                & img {
+                    width: 100%;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+
+    &__pagination {
+        width: 100vw;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        color: white;
+
+        & span {
+            color: #616161;
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 600px ) {
+    .mv-MoviesSearchList {
+        
+        &__item {
+
+            & .sui-AtomCard {
+
+                &-media {
+                    max-width: 15vw;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1200px ) {
+    .mv-MoviesSearchList {
+        
+        &__item {
+
+            & .sui-AtomCard {
+
+                &-media {
+                    max-width: 14vw;
+                }
+            }
+        }
+    }
+}

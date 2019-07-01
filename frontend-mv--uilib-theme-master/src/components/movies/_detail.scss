@@ -1,0 +1,53 @@
+@import '../../../../frontend-mv--uilib-components-master/components/movies/detail/node_modules/@schibstedspain/sui-atom-badge/lib/index.scss';
+
+.mv-MovieDetail {
+    width: 100vw;
+    padding: 20px;
+    height: 89vh;
+
+    &__movie {
+        width: 100%;
+
+        &-poster {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            & img {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+        &-info {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px ) {
+    .mv-MovieDetail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &__movie {
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            &-poster {
+                width: 300px;
+                display: flex;
+                justify-content: flex-end;
+
+                & img {
+                    width: 100%;
+                }
+            }
+            &-info {
+                margin-left: 20px;
+            }
+        }
+    }
+}

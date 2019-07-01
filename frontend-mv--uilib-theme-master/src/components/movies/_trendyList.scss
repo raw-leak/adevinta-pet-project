@@ -1,0 +1,80 @@
+.mv-MoviesTrendyList {
+    width: 100%;
+    height: 232px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    &__title {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        
+        & h2 {
+            color: black;
+            margin-left: 10px;
+        }
+        & a {
+            color: #79b8f3;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+    }
+
+    &__box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        justify-content: space-between;
+
+        &-button {
+            width: 5%;
+            background-color: rgba(0,0,0,0.1);
+            transition: all 0.3s ease-out 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &-movies {
+            height: 223px;
+            display: flex;
+            flex-direction: row;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+
+            &-item {
+                margin: 0 5px;
+
+                & .sui-AtomCard {
+                    margin: 0 10px;
+
+                    &-media {
+                        width: 130px;
+
+                        & img {
+                            width: 100%;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// QUITAR ESTO, ya que si no afecta a los elementos que no deberia
+.sui-AtomCard {
+    margin: 0 10px;
+
+    &-media {
+        width: 130px;
+
+        & img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    }
+}
